@@ -1,0 +1,27 @@
+﻿.ryu{
+   text-decoration:none;
+   color:black;
+
+}
+.pogi{
+    width:20px;
+    height:20px;
+}
+.ko{
+    text-align:center;
+    font-family:Courier New;
+    font-size:2.5vw;
+    color:black;
+    background-color:none;
+}
+.ryuko{
+    height:500px;
+        width:1500px;
+}
+.koc{
+    text-align:center;
+    font-family:Courier New;
+    font-size:2.5vw;
+    color:white;
+    background-color:none;
+}

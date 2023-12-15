@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ACITVITY LOG</title>
+        <script>
+            function AddData() {
+                var angelo = document.getElementById("angelo").value;
+                localStorage.setItem("", angelo);
+                console.log(angelo);
+
+                for (var i = 0; i < localStorage.length; i++) {
+                    var a = localStorage.key(i);
+                    var b = localStorage.getItem(a);
+                    document.getElementById("result").innerHTML += a + "  " + b + "<br>"
+                }
+            }
+        </script>
+    <link rel="stylesheet" href="monday.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body style="background-image: url(superpogi.jpg);">
+    <br /><br /><br /><br /><br />
+    <div style=" text-align: center; font-family: Courier New; font-size: 2.5vw; color: black; background-color: none;"><b>ACTIVITY LOG</b></div>
+    <br /><br /><br />
+    <center>
+        <fieldset style="border-width: 0.5vw; border-color: white; width:70vw;">
+            <br />
+            <br /><br />
+            <legend style="text-align:center;font-family:'Awesome Birds';font-size:5vw;">Sports Routine</legend>
+   
+    <input style="font-family:'Courier New';font-size:1.5vw;background-color:black;color:white;" id="angelo" placeholder="Enter a Game... " /><br /><br /><br /><br /><p></p>
+    <button style="font-family:'Courier New';font-size:1.5vw;" onclick="AddData()">Save</button>
+    <br /><br /><br /><br />
+    <br />
+    </fieldset>
+    <br />
+    <br />
+    <fieldset style="border-width:0.5vw; border-color:white;width:70vw;">
+        <br />
+        <br />
+        <legend style="font-family:'Awesome Birds';font-size:5vw;">
+            Output
+        </legend>
+        <div style="font-family:'Courier New';font-size:2vw;" id="result">
+        </div>
+        <br />
+        <br />
+    </fieldset>
+        </center>
+</body>
+</html>

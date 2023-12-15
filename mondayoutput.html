@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>RyuOutput</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ryu").mouseenter(function () {
+                $(this).css("color", "red");
+            });
+            $(".ryu").mouseleave(function () {
+                $(this).css("color", "black");
+     
+
+            });
+        });
+ </script>
+            <link rel="stylesheet" href="monday.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+        <center></center>
+
+        <body style="background-image: url(read.png);">
+            <div style="background-color: black; color: white; font-size: 1.5vw;font-family:'Courier New';padding-top:3px;"><marquee>
+            One Piece is a Japanese manga series written and illustrated by Eiichiro Oda.
+            It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997,
+            with its individual chapters compiled into 104 tankōbon volumes as of November 2022.
+            The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit.
+            With his pirate crew, the Straw Hat Pirates, Luffy explores the Grand Line in search of the deceased King of the Pirates Gol D.
+            Roger's ultimate treasure known as the "One Piece" in order to become the next King of the Pirates.
+        </marquee></div>
+            <div style=" font-family: Arial Black; font-size: 2vw; padding-bottom: 7px; padding-top: 80px; background-image: url(read.png); text-align: center;">
+                <nav>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="ryu" href="read.html">READ</a>
+            &nbsp;&nbsp;&nbsp;<a class="ryu" href="watch.html">WATCH</a>
+            &nbsp;&nbsp;&nbsp;<a class="ryu" href="about.html">ABOUT</a>
+            &nbsp;&nbsp;&nbsp;<a class="ryu" href="characters.html">CHARACTERS</a>
+            &nbsp;&nbsp;&nbsp;<a style="font-family: Arial Black;font-size: 2vw; text-align: center;" class="ryu" href="Activity Log.html">AUTHOR</a>
+    </div>
+    <img src="paper.jpg" style="width:100%;"/>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+        }
+            function showPosition(position) {
+                document.getElementById("demo").innerHTML= "Latitude:" + position.coords.latitude +
+                    "<br>Longitude:" + position.coords.longitude;
+            }
+    </script>
+    <body>
+        <center>
+        <h3 style="text-align:center;font-size:1.5vw;font-family:'Courier New'"><b>ONE PIECE</b></h3>
+        <button onclick="getLocation()" style="font-size:1.5vw;text-align:center;font-family:'Courier New'">MORE INFORMATION</button>
+        <p id="demo"></p>
+        </center>
+    </body>
+    <p style="font-family:Courier New;font-size:1.5vw;">
+        &nbsp;&nbsp;One Piece is a Japanese manga series written and illustrated by Eiichiro Oda.
+        It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997,
+        with its individual chapters compiled into 104 tankōbon volumes as of November 2022.
+        The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit.
+        With his pirate crew, the Straw Hat Pirates, Luffy explores the Grand Line in search of the deceased King of the Pirates Gol D.
+        Roger's ultimate treasure known as the "One Piece" in order to become the next King of the Pirates.
+        <br />
+        <br />
+        &nbsp;&nbsp;The manga spawned a media franchise, having been adapted into a festival film produced by Production I.G,
+        and an anime series produced by Toei Animation, which began broadcasting in Japan in 1999. Additionally,
+        Toei has developed fourteen animated feature films, one original video animation, and thirteen television specials.
+        Several companies have developed various types of merchandising and media, such as a trading card game and numerous video games.
+        The manga series was licensed for an English language release in North America and the United Kingdom by Viz Media and in
+        Australia by Madman Entertainment. The anime series was licensed by 4Kids Entertainment for an English-language release in
+        North America in 2004 before the license was dropped and subsequently acquired by Funimation in 2007.
+    </p>
+</body>
+</html>
